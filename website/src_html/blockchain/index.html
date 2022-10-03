@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Тут писать код -->
+    <p></p>
+    <p></p>
+    Blockchain:
+    <p></p>
+    <p></p>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script data-main="js/app.js" src="js/require.js"></script>
+    <script>
+        var Web3 = require("web3");
+        const web3 = new Web3("https://cloudflare-eth.com");
+
+        web3.eth.getBlockNumber(function (error, result) {
+            console.log(result);
+        })
+        
+    </script>
+    <!-- Тут писать код  -->
+
+{% endblock %}
