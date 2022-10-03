@@ -156,6 +156,11 @@ def new_page():
     return render('new_page/index.html')
 
 
+@app.route("/blockchain")
+def blockchain():
+    return render('blockchain/index.html')
+
+
 @app.route("/url_request/<value>", methods=['GET', 'POST'])
 def url_request(value):
     res_value = value
